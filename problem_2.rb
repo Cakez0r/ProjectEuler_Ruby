@@ -11,13 +11,16 @@ cur = 1
 
 sum = 0
 
-while (cur < 4000000) do
+begin 
   n = cur + last
   
   last = cur
   cur = n
   
-  sum += cur
-end
+  if (cur % 2) == 0
+    sum += cur
+  end
+  
+end while (cur < 4000000)
 
 puts sum
